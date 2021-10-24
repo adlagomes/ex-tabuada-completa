@@ -7,9 +7,7 @@
 }
 
 body {
-    background-color: rgb(55, 146, 153);
-    background-image: url(img/bg-tabuada-01.png); /* só funcionou com .png =/ */
-    background-attachment:fixed;
+    background-color: rgb(218, 218, 218);
     overflow-y: hidden;
     font: normal 18pt Calibri;
     margin: 10rem;
@@ -23,13 +21,12 @@ header {
 }
 
 section {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:#e0660398;
-    color: white;
+    background:#ffffff98;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     padding: 15px;
     width: 600px;
@@ -39,7 +36,7 @@ section {
 }
 
 section p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
 }
 
@@ -58,7 +55,7 @@ div.operacoes label {
 }
 
 div.operacoes label:hover {
-    background: #c5450a;
+    background: #ff712f;
     border-radius: 50%;
     transition-duration: .2s;
 }
@@ -72,6 +69,7 @@ input#txtn {
     text-align: center;
     font-size: 16pt;
     outline: none;
+    border:2px #ff8c57 solid;
     border-radius: 10px;
     width: 150px;
     height: 30px;
@@ -84,7 +82,7 @@ input#txtn {
 }
 
 .btn-tabuada {
-    background:rgb(231, 230, 225);
+    background:rgb(255, 219, 41);
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     font-size: 18px;
@@ -95,7 +93,7 @@ input#txtn {
 }
 
 .btn-tabuada:hover{
-    background: rgb(248, 212, 113);
+    background: rgb(255, 193, 24);
     transition-duration: .2s;
 }
 
@@ -113,6 +111,7 @@ input#txtn {
 
 #seltab {
     margin-top: 20px;
+    border:2px #ff8c57 solid;
     border-radius: 10px;
     font-size: 14pt;
     text-align: center;
@@ -125,15 +124,17 @@ input#txtn {
     background: white;
     color: gray;
     position: absolute;
+    border: 2px #ff8c57 solid;
+    border-bottom: white;
     border-radius: 10px 10px 0 0;
     font-size: 14pt;
     text-align: center;
     width: 19.1rem;
-    height: 25px;
+    height: 30px;
 }
 button {
     margin-top: 15px;
-    background:rgb(231, 230, 225);
+    background: rgb(255, 219, 41);
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     font-size: 18px;
@@ -143,7 +144,7 @@ button {
 }
 
 button:hover{
-    background: rgb(248, 212, 113);
+    background: rgb(255, 193, 24);
     transition-duration: .2s;
 }
 
@@ -154,7 +155,7 @@ button:active {
 footer {
     margin-top: 5rem;
     font-size: 14pt;
-    color: #970707;
+    color: #626262;
     text-align: center;
     font-style:italic;
 }
