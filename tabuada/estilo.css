@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(55, 146, 153);
+    background-image: url(img/bg-tabuada-01.png); /* só funcionou com .png =/ */
+    background-attachment:fixed;
+    overflow-y: hidden;
+    font: normal 18pt Calibri;
+    margin: 10rem;
+}
+
+header {
+    color: #201d1c;
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#e0660398;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    height: auto;
+    margin:auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+}
+
+section p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+}
+
+.operacoes {
+    display: flex;
+}
+
+div.operacoes label {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: baseline;
+    margin: .3rem;
+    width: auto;
+}
+
+div.operacoes label:hover {
+    background: #c5450a;
+    border-radius: 50%;
+    transition-duration: .2s;
+}
+
+/* Active -> efeito do botão quando clica nele */
+div.operacoes label:active {
+    transform: translateY(1px);
+}
+
+input#txtn {
+    text-align: center;
+    font-size: 16pt;
+    outline: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.btn-operacao {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.btn-tabuada {
+    background:rgb(231, 230, 225);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px
+}
+
+.btn-tabuada:hover{
+    background: rgb(248, 212, 113);
+    transition-duration: .2s;
+}
+
+.btn-tabuada:active {
+    transform: translateY(1px);
+}
+
+.geradora {
+    margin-bottom: 1rem;
+}
+
+.geradora input {
+    margin: .3rem;
+}
+
+#seltab {
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 14pt;
+    text-align: center;
+    padding: .5rem;
+    width: 19.1rem;
+    outline: none;
+    overflow-y: hidden;
+}
+#txtLista {
+    background: white;
+    color: gray;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    font-size: 14pt;
+    text-align: center;
+    width: 19.1rem;
+    height: 25px;
+}
+button {
+    margin-top: 15px;
+    background:rgb(231, 230, 225);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background: rgb(248, 212, 113);
+    transition-duration: .2s;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+footer {
+    margin-top: 5rem;
+    font-size: 14pt;
+    color: #970707;
+    text-align: center;
+    font-style:italic;
+}

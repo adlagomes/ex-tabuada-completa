@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onselectstart="return false">
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <p>Escolha a operação desejada e um número de 1 a 10:</p>
+        <div class="operacoes">
+                <label for="soma"><input class="btn-operacao" id="soma" type="radio" name="chk">Adição</label>
+                <label for="sub"><input class="btn-operacao" id="sub" type="radio" name="chk">Subtração</label>
+                <label for="mult"><input class="btn-operacao" id="mult" type="radio" name="chk">Multiplicação</label>
+                <label for="div"><input class="btn-operacao" id="div" type="radio" name="chk">Divisão</label>
+        </div>
+        <div class="geradora">
+            <input type="number" name="num" id="txtn" min="1" max="10" onkeyup="if(this.value>10){this.value='10';}else if(this.value<1){this.value='1';}">
+            <input class="btn-tabuada" type="button" value="Gerar Tabuada" onclick="tabuada()">
+        </div>
+        <div>
+            <div id="txtLista">-Tabuada Gerada-</div>
+            <select name="tabuada" id="seltab" size="10">
+            </select>
+        </div>
+        <button type="button" onclick="limpar()" >Limpar</button>
+    </section>
+    <footer>
+        <p>desenvolvido por @adla.dev</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
